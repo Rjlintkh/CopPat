@@ -18,9 +18,9 @@ class CopPat {
         if (document.readyState === "complete") {
             this.init();
         } else {
-            document.addEventListener("DOMContentLoaded", () => {
+            window.onload = () => {
                 this.init();
-            });
+            };
         }
     }
 
